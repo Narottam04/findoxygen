@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  position: relative;
+  background: #f4f4f4;
+}
+
+:root {
+  --text-color: #565656;
+  --primary-color: #008ad8;
+}
+
+/* utility classes */
+.font-mont {
+  font-family: "Montserrat", sans-serif;
+}
+/* navbar */
+#navbar {
+  background-color: white;
+  color: black;
+  overflow: auto;
+  border-bottom: 1px solid #111;
+}
+
+.nav-container {
+  margin: auto;
+  max-width: 1200px;
+  overflow: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  height: 8vh;
+  align-items: center;
+  background: white;
+}
+
+.nav-ul {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.nav-ul li {
+  list-style-type: none;
+}
+
+.nav-ul li a {
+  text-decoration: none;
+  color: black;
+}
+/* hamburger menu */
+.burger div {
+  width: 23px;
+  height: 2px;
+  background-color: black;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.burger {
+  display: none;
+}
+
+/* main table */
+main {
+  margin: 2.8rem;
+}
+
+.labels {
+  display: block;
+  background-color: var(--primary-color);
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  display: grid;
+  grid-template-columns: 30% 25% 25% auto;
+  border-radius: 0.5rem;
+  padding: 0.2em 1em;
+}
+
+.labels p {
+  padding: 1rem 0;
+}
+
+.company {
+  display: grid;
+  grid-template-columns: 30% 25% 25% auto;
+  padding: 0.2em 1em;
+}
+
+.hide {
+  display: none;
+}
+
+.company p {
+  padding: 1rem 0;
+}
+
+.company:hover {
+  background-color: white;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-ul {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-ul {
+    position: absolute;
+    right: 0;
+    top: 8vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30vh;
+    background: #111;
+    /* change transform to generate diff animation */
+    transform: translateY(-150%);
+  }
+
+  .nav-ul li {
+    opacity: 0;
+  }
+
+  .nav-ul li a {
+    color: white;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  /* main style */
+  .labels {
+    display: none;
+  }
+
+  .company {
+    display: block;
+    padding: 0.5em 0.1em;
+  }
+
+  .company p {
+    padding: 0rem;
+  }
+
+  .hide {
+    display: inline-block;
+    font-weight: 800;
+  }
+
+  .company-name {
+    margin: 1rem 0;
+  }
+  .company-number {
+    /* font-weight: 800; */
+    margin: 0.8rem 0;
+  }
+
+  .company-city {
+    /* font-weight: 800; */
+    border-bottom: 1px solid #111;
+  }
+}
+
+.nav-active {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+/* Hamburger animation */
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-4px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-4px, -6px);
+}
+
+/* link animation */
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
