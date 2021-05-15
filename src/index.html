@@ -73,90 +73,11 @@
                         <input type="checkbox" class="dd-input" id="test">
 
                         <ul class="dd-menu">
+                            {%- for state in states -%}
                             <li>
-                                <a href="/states/andhrapradesh/index.html">Andhra Pradesh</a>
+                                <a href="/states/{{ state.name | slug }}/">{{ state.name }}</a>
                             </li>
-                            <li>
-                                <a href="/states/arunachalpradesh/index.html"> Arunachal Pradesh</a>
-                            </li>
-                            <li>
-                                <a href="/states/assam/index.html">Assam</a>
-                            </li>
-                            <li>
-                                <a href="/states/bihar/index.html">Bihar</a>
-                            </li>
-                            <li>
-                                <a href="/states/chhattisgarh/index.html">Chhattisgarh</a>
-                            </li>
-                            <li>
-                                <a href="/states/goa/index.html">Goa</a>
-                            </li>
-                            <li>
-                                <a href="/states/gujarat/index.html">Gujarat</a>
-                            </li>
-                            <li>
-                                <a href="/states/haryana/index.html">Haryana</a>
-                            </li>
-                            <li>
-                                <a href="/states/himachalpradesh/index.html">Himachal Pradesh</a>
-                            </li>
-                            <li>
-                                <a href="/states/jharkhand/index.html">Jharkhand</a>
-                            </li>
-                            <li>
-                                <a href="/states/karnataka/index.html">Karnataka</a>
-                            </li>
-                            <li>
-                                <a href="/states/kerala/index.html"> Kerala</a>
-                            </li>
-                            <li>
-                                <a href="/states/madhyapradesh/index.html">Madhya Pradesh</a>
-                            </li>
-                            <li>
-                                <a href="/states/maharashtra/index.html">Maharashtra</a>
-                            </li>
-                            <li>
-                                <a href="/states/manipur/index.html"> Manipur</a>
-                            </li>
-                            <li>
-                                <a href="/states/meghalaya/index.html"> Meghalaya</a>
-                            </li>
-                            <li>
-                                <a href="/states/mizoram/index.html"> Mizoram</a>
-                            </li>
-                            <li>
-                                <a href="/states/nagaland/index.html"> Nagaland</a>
-                            </li>
-                            <li>
-                                <a href="/states/odisha/index.html"> Odisha</a>
-                            </li>
-                            <li>
-                                <a href="/states/punjab/index.html"> Punjab</a>
-                            </li>
-                            <li>
-                                <a href="/states/rajasthan/index.html"> Rajasthan</a>
-                            </li>
-                            <li>
-                                <a href="/states/sikkim/index.html"> Sikkim</a>
-                            </li>
-                            <li>
-                                <a href="/states/tamilnadu/index.html">Tamil Nadu</a>
-                            </li>
-                            <li>
-                                <a href="/states/telangana/index.html"> Telangana</a>
-                            </li>
-                            <li>
-                                <a href="/states/tripura/index.html"> Tripura</a>
-                            </li>
-                            <li>
-                                <a href="/states/uttarakhand/index.html"> Uttar Pradesh</a>
-                            </li>
-                            <li>
-                                <a href="/states/uttarpradesh/index.html"> Uttarakhand</a>
-                            </li>
-                            <li>
-                                <a href="/states/westbengal/index.html"> West Bengal</a>
-                            </li>
+                            {%- endfor -%}
                         </ul>
 
                     </label>

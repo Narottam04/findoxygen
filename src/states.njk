@@ -1,3 +1,11 @@
+---
+pagination:
+  data: states
+  size: 1
+  alias: state
+permalink: "/states/{{ state.name | slug }}/"
+---
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,7 +39,7 @@
 
     <!-- css -->
     <link rel="stylesheet" href="/CSS/database.css" />
-    <title>FIND OXYGEN</title>
+    <title>{{ state.name }}</title>
 </head>
 
 <body>
@@ -64,18 +72,12 @@
     </section>
 
 
-    <main id="data">
+    <main>
         <input type="search" placeholder="Search nearest city" id="search">
-        <div class="labels">
-            <p class="lbl-details">Company Name</p>
-            <p class="lbl-name">Person Name</p>
-            <p class="lbl-number">Contact Number</p>
-            <p class="lbl-city">City</p>
-        </div>
+        <availability-table driveId="{{ state.id }}">
+        </availability-table>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/drive-db"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
-    <script src="/Javascript/script.js"></script>
+    <script type="module" src="/Javascript/table.js"></script>
     {{content | safe}}
 </body>
 
