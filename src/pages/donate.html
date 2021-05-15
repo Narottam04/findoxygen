@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- google fonts -->
     <!-- connect to domain of font files -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +31,8 @@
 
     <!-- css -->
     <link rel="stylesheet" href="/CSS/style.css" />
-    <title>FIND OXYGEN</title>
+    <link rel="stylesheet" href="/CSS/donate.css" />
+    <title>Find Oxygen</title>
 </head>
 
 <body>
@@ -43,7 +44,7 @@
                     <h2>FINDO2</h2>
                     <ul class="nav-ul">
                         <li><a href="#">HOME</a></li>
-                        <li><a href="/pages/donate/index.html">DONATE</a></li>
+                        <li><a href="#">DONATE</a></li>
                         <li><a href="#">CONTACT US</a></li>
                     </ul>
                     <div class="burger">
@@ -53,35 +54,48 @@
                     </div>
                 </div>
             </nav>
-            <!-- main section -->
+
             <div class="hero-sec">
                 <h1 class="font-mont">
-                    FIND OXYGEN SUPPLIER NEAR YOU!
+                    HELP US TO MAKE THIS WEBSITE BETTER!
                 </h1>
                 <p>
-                    We connect buyers with sellers, no email id, account information needed. It's an initative to help
-                    people suffereing from pandemic. <br> We only help people by connecting them with supplier, price of
-                    the oxygen cylinder should be discussed by buyer and seller.
+                    We created this open source website to help people suffereing from pandemic in India. <br>If you
+                    liked our work, consider donating to us so that we can accomplish the goals that are listed below.
                 </p>
-                <div>
-                    <label class="dropdown">
-
-                        <div class="dd-button">
-                            SELECT YOUR STATE
-                        </div>
-
-                        <input type="checkbox" class="dd-input" id="test">
-
-                        <ul class="dd-menu">
-                            {%- for state in states -%}
-                            <li>
-                                <a href="/states/{{ state.name | slug }}/">{{ state.name }}</a>
-                            </li>
-                            {%- endfor -%}
-                        </ul>
-
-                    </label>
-                </div>
+            </div>
+        </div>
+    </section>
+    <!-- OUR GOALS -->
+    <section id="goals">
+        <div id="section-content">
+            <div class="content-left">
+                <h2>OUR GOALS</h2>
+                <p>
+                    Our plans for the future is to convert this website into a TWA(trusted web activity) and add this
+                    website as an app to play store. As TWA's are not allowed in apple store we have to use library
+                    like capacitor js to add this website as an app in apple store. If the website helps people, plans
+                    are to upgrade database (which costs money) for performance boost.
+                </p>
+            </div>
+            <div class="content-right">
+                <img src="/images/mountain.png" alt="goals" />
+            </div>
+        </div>
+    </section>
+    <section id="goals">
+        <div id="section-content">
+            <div class="content-right">
+                <img src="/images/sunglasses.png" alt="goals" class="contribute-img" />
+            </div>
+            <div class="content-left">
+                <h2>CAN'T DONATE, CONTRIBUTE!</h2>
+                <p>
+                    If you can't donate it's okay. You can still contribute to this project.
+                    <br><a href="https://github.com/Narottam04/findoxygen" target="_blank"
+                        style="text-decoration: underline;">https://github.com/Narottam04/findoxygen</a>
+                    <br>Any pull requests are welcomed!
+                </p>
             </div>
         </div>
     </section>

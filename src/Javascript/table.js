@@ -22,10 +22,10 @@ async function addListingsFromDrive(id, table) {
 function toRow(obj) {
     const row = document.createElement("tr");
 
-    row.append(toCell("company", obj.companyname));
-    row.append(toCell("person", obj.personname));
-    row.append(toCell("contact", obj.contactnumber));
-    row.append(toCell("city", obj.city));
+    row.append(toCell("company font-mont", obj.companyname));
+    row.append(toCell("person font-mont", obj.personname));
+    row.append(toCell("contact font-mont", obj.contactnumber));
+    row.append(toCell("city font-mont", obj.city));
 
     return row;
 }

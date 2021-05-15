@@ -6,6 +6,10 @@ module.exports = function (eleventyConfig) {
     );
     eleventyConfig.addPassthroughCopy("./src/CSS/");
     eleventyConfig.addWatchTarget("./src/CSS/");
+    eleventyConfig.addPassthroughCopy("./src/pages/");
+    eleventyConfig.addWatchTarget("./src/pages/");
+    eleventyConfig.addPassthroughCopy("./src/images/");
+    eleventyConfig.addWatchTarget("./src/images/");
 
     return {
         dir: {
