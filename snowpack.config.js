@@ -5,7 +5,7 @@ module.exports = {
     },
     exclude: ["**/#*#", "**/.#*"],
     devOptions: {
-        port: 8081,
+        port: 8080,
         open: "none",
     },
     plugins: [["@snowpack/plugin-webpack"]],
