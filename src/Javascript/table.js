@@ -2,7 +2,7 @@ import drive from "./drive-db.js";
 import List from "list.js";
 
 const OPTIONS = {
-    valueNames: ["city"]
+    valueNames: ["city"],
 };
 
 async function addListingsFromDrive(id, table) {
@@ -44,7 +44,9 @@ window.addEventListener("load", () => {
     const table = main.querySelector("table");
     const id = table.dataset.drive;
 
-    addListingsFromDrive(id, table).then(() => {
-        userList = new List(main, OPTIONS);
-    }).catch(console.error);
+    addListingsFromDrive(id, table)
+        .then(() => {
+            userList = new List(main, OPTIONS);
+        })
+        .catch(console.error);
 });

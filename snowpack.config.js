@@ -1,7 +1,7 @@
 module.exports = {
     mount: {
-        "public": { url: "/", static: true },
-        "src": { url: "/src" }
+        public: { url: "/", static: true },
+        src: { url: "/src" },
     },
     exclude: ["**/#*#", "**/.#*"],
     devOptions: {
