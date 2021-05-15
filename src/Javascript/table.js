@@ -46,6 +46,5 @@ window.addEventListener("load", () => {
 
     addListingsFromDrive(id, table).then(() => {
         userList = new List(main, OPTIONS);
-        userList.on("updated", console.log);
     }).catch(console.error);
 });
