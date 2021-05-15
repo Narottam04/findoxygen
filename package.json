@@ -4,13 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "eleventy --serve",
-    "build": "eleventy" 
+    "dev:site": "eleventy --watch",
+    "dev:js": "snowpack dev",
+    "start": "run-p dev:*",
+    "build:site": "eleventy",
+    "build:js": "snowpack build",
+    "build": "run-s build:site build:js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^0.12.1"
+    "@11ty/eleventy": "^0.12.1",
+    "list.js": "^2.3.1"
+  },
+  "devDependencies": {
+    "@snowpack/plugin-webpack": "^2.3.1",
+    "js-yaml": "^3.14.1",
+    "npm-run-all": "^4.1.5",
+    "snowpack": "^3.4.0"
   }
 }

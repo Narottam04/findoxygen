@@ -234,3 +234,35 @@ main {
     transform: translateY(0px);
   }
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead > tr {
+  background-color: var(--primary-color);
+}
+
+tbody > tr:hover {
+  background-color: white;
+}
+
+td, th {
+  padding: 1rem 0;
+}
+
+th {
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  text-align: left;
+}
+
+td:first-child, th:first-child {
+  padding-left: 1rem;
+}
+
+td:last-child, th:last-child {
+  padding-right: 1rem;
+}
