@@ -1,4 +1,10 @@
 LoadData();
+var options = {
+    valueNames: ['company-city']
+};
+
+var userList = new List('data', options);
+
 async function LoadData() {
     let data = await drive('1jRtK3XXZm9ZkyqZQjKJcFF2Rbt2A8Ai-9CxiT2-Dyf0')
     let dataTable = document.querySelector('#data');
