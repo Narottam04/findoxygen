@@ -1,7 +1,12 @@
 module.exports = {
-  root: "public",
-  devOptions: {
-    port: 8081,
-    open: "none",
-  }
+    mount: {
+        "public": { url: "/", static: true },
+        "src": { url: "/src" }
+    },
+    exclude: ["**/#*#", "**/.#*"],
+    devOptions: {
+        port: 8081,
+        open: "none",
+    },
+    plugins: [["@snowpack/plugin-webpack"]],
 };
