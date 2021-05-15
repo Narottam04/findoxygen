@@ -73,9 +73,22 @@ permalink: "/states/{{ state.name | slug }}/"
 
 
     <main>
-        <input type="search" placeholder="Search nearest city" id="search">
-        <availability-table driveId="{{ state.id }}">
-        </availability-table>
+        <input type="search" placeholder="Search nearest city" id="search" class="search">
+        <table data-drive="{{ state.id }}">
+            <thead>
+                <tr>
+                    <th>Company</th>
+                    <th>Person</th>
+                    <th>Contact</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tbody class="list">
+                <tr>
+                    <td span="4">Loading…</td>
+                </tr>
+            </tbody>
+        </table>
     </main>
     <script type="module" src="/Javascript/table.js"></script>
     {{content | safe}}
