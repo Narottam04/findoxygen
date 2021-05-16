@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <!-- connect to domain of font files -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- optionally increase loading priority -->
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800&display=swap">
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap">
+
+    <!-- async CSS -->
+    <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');"
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800&display=swap">
+    <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap">
+
+    <!-- no-JS fallback -->
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800&display=swap">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap">
+    </noscript>
+
+    <!-- css -->
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/database.css" />
+    <link rel="stylesheet" href="/CSS/supplier.css" />
+    <title>FINDOXYGEN</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="/index.html" class="logo">
+                <h2 class="font-rale">FINDO2</h2>
+            </a>
+            <ul class="nav-ul">
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="/pages/supplier/index.html">SUPPLIER</a></li>
+                <li><a href="/pages/donate/index.html">DONATE</a></li>
+                <li><a href="https://webdrip.in/contact/" target="_blank">CONTACT US</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+    <!-- contact section -->
+    <section id="contact">
+        <div class="contact-heading">
+            <h1>GIVE PROPER DETAILS</h1>
+            <p>
+                Just fill this simple form and we will add your data to the website. If you have any queries you can
+                drop us an email at info@webdrip.in or you can use contact form that is provided at the top of the
+                website.
+            </p>
+        </div>
+        <div class="contact-us">
+            <div class="box-left">
+                <img src="/images/illustration-hhristova4.png" alt="supplier data" />
+            </div>
+            <!-- form -->
+            <div class="box-right">
+                <form class="gform pure-form pure-form-stacked" method="POST" data-email="webdripdev@gmail.com"
+                    action="https://script.google.com/macros/s/AKfycbxtilzZ2SEib6EWiLzPzHeaEfSrdTGB-8bhH1nEjqwXtzh3eoIXKCRpysFg3__-BW74/exec">
+                    <!-- change the form action to your script url -->
+
+                    <div class="form-elements">
+                        <fieldset class="pure-group form-control">
+                            <label for="company">Company Name</label>
+                            <input id="company" name="company" placeholder="Enter your Name" required
+                                autocomplete="off" />
+                        </fieldset>
+                        <fieldset class="pure-group form-control">
+                            <label for="name">Person Name</label>
+                            <input id="name" name="name" placeholder="Enter your Name" required autocomplete="off" />
+                        </fieldset>
+                        <fieldset class="pure-group form-control">
+                            <label for="number">Contact Number</label>
+                            <input id="number" name="number" placeholder="Enter your Name" required
+                                autocomplete="off" />
+                        </fieldset>
+                        <fieldset class="pure-group form-control">
+                            <label for="city">City</label>
+                            <input id="city" name="city" placeholder="Enter your Name" required autocomplete="off" />
+                        </fieldset>
+                        <button class="submit-btn">Submit</button>
+                    </div>
+
+                    <!-- Customise the Thankyou Message People See when they submit the form: -->
+                    <div class="thankyou_message" style="display: none">
+                        <h2>
+                            <em>Thanks</em> for contacting us! We will get back to you soon!
+                        </h2>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section id="footer">
+        <p>MADE WITH ❤️ BY NAROTTAM</p>
+    </section>
+    <script type="module" src="/src/Javascript/script.js"></script>
+</body>
+
+</html>

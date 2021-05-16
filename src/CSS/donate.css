@@ -159,6 +159,13 @@
   display: none;
 }
 
+#footer {
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
 @media (max-width: 768px) {
   #section-content {
     flex-direction: column;
